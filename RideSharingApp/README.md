@@ -83,3 +83,30 @@ https://www.geeksforgeeks.org/flipkart-machine-coding-round-experience/
       * Gaurav: 1 Taken, 0 Offered 
       * Rahul: 0 Taken, 0 Offered 
       * Shipra: 0 Taken, 2 Offered
+
+### Sample input
+add_user Rohan,M,36;add_vehicle Rohan,Swift,KA-01-12345
+add_user Shashank,M,29;add_vehicle Shashank,Baleno,TS-05-62395
+add_user Nandini,F,29
+add_user Shipra,F,27;add_vehicle Shipra,Polo,KA-05-41491;add_vehicle Shipra,Activa,KA-12-12332
+add_user Gaurav,M,29
+add_user Sam,M,29
+add_user Rahul,M,35;add_vehicle Rahul,XUV,KA-05-1234
+offer_ride Rohan,Hyderabad,1,Swift,KA-01-12345,Bangalore
+offer_ride Shipra,Bangalore,1,Activa,KA-12-12332,Mysore
+offer_ride Shipra,Bangalore,2,Polo,KA-05-41491,Mysore
+offer_ride Shashank,Hyderabad,2,Baleno,TS-05-62395,Bangalore
+offer_ride Rahul,Hyderabad,5,XUV,KA-05-1234,Bangalore
+offer_ride Rohan,Bangalore,1,Swift,KA-01-12345,Pune
+select_ride Nandini,Bangalore,Mysore,1,Most_Vacant
+select_ride Gaurav,Bangalore,Mysore,1,Activa
+select_ride Shashank,Mumbai,Bangalore,1,Most_Vacant
+select_ride Rohan,Hyderabad,Bangalore,1,Baleno
+select_ride Shashank,Hyderabad,Bangalore,1,Polo
+print_ride_stats
+end_ride KA-01-12345
+end_ride TS-05-62395
+end_ride KA-05-41491
+end_ride KA-12-12332
+end_ride KA-05-1234
+end_input
